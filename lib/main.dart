@@ -1,22 +1,23 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(MyApps());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class MyApps extends StatelessWidget {
+//  const MyApps({Key? key}) : super(key: key);
+
+  var a = 12;
+  var name = "My name is Rony";
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Material(
-        child: Container(
-          child: Text(
-            "Hello",
-            style: TextStyle(fontSize: 30),
-          ),
-        ),
+      home: Column(
+        children: [
+          Text("$a"),
+          Text("$name"),
+        ],
       ),
     );
   }
