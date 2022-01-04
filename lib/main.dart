@@ -27,6 +27,22 @@ class MyApps extends StatelessWidget {
               Text(
                 "Please Login",
                 style: TextStyle(fontSize: 30, color: Colors.blueAccent),
+              ),
+              Column(
+                children: [
+                  TextFormField(
+                    decoration: InputDecoration(
+                      hintText: "Enter your Username",
+                      labelText: "User ID",
+                    ),
+                  ),
+                  TextFormField(
+                    decoration: InputDecoration(
+                      hintText: "Enter your Password",
+                      labelText: "Enter Password",
+                    ),
+                  ),
+                ],
               )
             ],
           ),
