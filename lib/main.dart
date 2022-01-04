@@ -5,19 +5,32 @@ void main() {
 }
 
 class MyApps extends StatelessWidget {
-//  const MyApps({Key? key}) : super(key: key);
-
-  var a = 12;
-  var name = "My name is Rony";
+  MyApps({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Column(
-        children: [
-          Text("$a"),
-          Text("$name"),
-        ],
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Login Page"),
+        ),
+        body: Material(
+          child: Column(
+            children: [
+              SizedBox(
+                  height: 200,
+                  width: 500,
+                  child: Image.asset(
+                    "assets/images/login.png",
+                    fit: BoxFit.contain,
+                  )),
+              Text(
+                "Please Login",
+                style: TextStyle(fontSize: 30, color: Colors.blueAccent),
+              )
+            ],
+          ),
+        ),
       ),
     );
   }
