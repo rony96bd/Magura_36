@@ -28,21 +28,25 @@ class MyApps extends StatelessWidget {
                 "Please Login",
                 style: TextStyle(fontSize: 30, color: Colors.blueAccent),
               ),
-              Column(
-                children: [
-                  TextFormField(
-                    decoration: InputDecoration(
-                      hintText: "Enter your Username",
-                      labelText: "User ID",
+              Padding(
+                padding: const EdgeInsets.only(left: 15.0, right: 15),
+                child: Column(
+                  children: [
+                    TextFormField(
+                      decoration: InputDecoration(
+                        hintText: "Enter your Username",
+                        labelText: "User ID",
+                      ),
                     ),
-                  ),
-                  TextFormField(
-                    decoration: InputDecoration(
-                      hintText: "Enter your Password",
-                      labelText: "Enter Password",
+                    TextFormField(
+                      decoration: InputDecoration(
+                        hintText: "Enter your Password",
+                        labelText: "Enter Password",
+                      ),
                     ),
-                  ),
-                ],
+                    ElevatedButton(onPressed: () {}, child: Text("Login"))
+                  ],
+                ),
               )
             ],
           ),
