@@ -51,7 +51,7 @@ class MyApps extends StatelessWidget {
                       ElevatedButton(
                         onPressed: () {},
                         child: Text("Login"),
-                        style: TextButton.styleFrom(minimumSize: Size(100, 45)),
+                        style: TextButton.styleFrom(minimumSize: Size(200, 45)),
                       )
                     ],
                   ),
